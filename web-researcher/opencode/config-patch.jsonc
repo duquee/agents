@@ -1,0 +1,22 @@
+{
+  "instructions": [
+    "~/.config/opencode/web-research-instructions.md"
+  ],
+  "permission": {
+    "webfetch": "allow",
+    "websearch": "allow"
+  },
+  "agent": {
+    "web-researcher": {
+      "description": "Web researcher using Playwright real browser. Use for ANY webpage content retrieval or web search.",
+      "mode": "subagent",
+      "model": "opencode-go/deepseek-v4-flash",
+      "steps": 25,
+      "permission": {
+        "bash": "allow",
+        "edit": "deny",
+        "webfetch": "deny"
+      }
+    }
+  }
+}

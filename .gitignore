@@ -1,0 +1,20 @@
+# Secrets / credentials
+.env
+*.env
+*.secret
+**/config-patch.local.jsonc
+secrets/
+
+# Node / dependencies
+node_modules/
+package-lock.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
